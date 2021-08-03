@@ -1,0 +1,87 @@
+Starting job 3126013 on c10-[9-10,19,21-22] at Thu Jul 8 03:30:47 CEST 2021
+
+Copying 68_b3lyp-g_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 68_b3lyp-g_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3126013      68_b3lyp-+        200                                             00:13:15      1:0 
+3126013.bat+      batch         20        1   00:00:00          0   00:00:00   00:13:15      1:0 
+3126013.ext+     extern        200        5   00:00:00          4   00:00:00   00:13:16      0:0 
+3126013.0      mrchem.x        200       20   00:13:10         19   00:38:29   00:13:12      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3126013                                                                          
+3126013.bat+     14604K          0     14604K        0              0          0 
+3126013.ext+          0          4          0        0              4          0 
+3126013.0      2472716K          1 1684692582        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3126013                                                                                               
+3126013.bat+        3.58M               0          3.58M        0.02M                0          0.02M 
+3126013.ext+        0.00M               4          0.00M            0                4              0 
+3126013.0           2.67M               4          2.66M       51.07M                5         12.36M 
+
+Job 3126013 completed at Thu Jul 8 03:44:03 CEST 2021
+Starting job 3148678 on c2-[3,6,20,24,26],c5-[37,42-44,57] at Wed Jul 14 10:02:02 CEST 2021
+
+Copying 68_b3lyp-g_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 68_b3lyp-g_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3148678      68_b3lyp-+        100                                             00:03:17      1:0 
+3148678.bat+      batch         10        1   00:00:00          0   00:00:00   00:03:17      1:0 
+3148678.ext+     extern        100       10   00:00:00          9   00:00:00   00:03:17      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3148678                                                                          
+3148678.bat+      6900K          0      6900K        0              0          0 
+3148678.ext+          0          9          0        0              9          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3148678                                                                                               
+3148678.bat+        3.55M               0          3.55M        0.02M                0          0.02M 
+3148678.ext+        0.00M               9          0.00M            0                9              0 
+
+Job 3148678 completed at Wed Jul 14 10:05:21 CEST 2021
+Starting job 3149551 on c10-[32-35,38-42] at Wed Jul 14 16:32:06 CEST 2021
+
+Copying 68_b3lyp-g_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 68_b3lyp-g_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3149551      68_b3lyp-+        100                                             00:16:53      1:0 
+3149551.bat+      batch         10        1   00:00:00          0   00:00:00   00:16:53      1:0 
+3149551.ext+     extern        100        9   00:00:00          7   00:00:00   00:16:53      0:0 
+3149551.0      mrchem.x        100       10   00:08:36          9   00:43:27   00:10:53      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3149551                                                                          
+3149551.bat+     14492K          0     14492K        0              0          0 
+3149551.ext+          0          7          0        0              7          0 
+3149551.0      2987248K          1 2163902873        0              6          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3149551                                                                                               
+3149551.bat+        5.60M               0          5.60M        0.06M                0          0.06M 
+3149551.ext+        0.00M               7          0.00M            0                7              0 
+3149551.0           2.66M               7          2.64M       47.15M                7          6.58M 
+
+Job 3149551 completed at Wed Jul 14 16:49:00 CEST 2021

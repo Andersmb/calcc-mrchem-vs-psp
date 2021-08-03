@@ -1,0 +1,30 @@
+Starting job 3125980 on c11-[6-9,24-25,31] at Thu Jul 8 02:37:04 CEST 2021
+
+Copying 53_pbe0_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 53_pbe0_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3125980        53_pbe0_        200                                             00:13:04      1:0 
+3125980.bat+      batch         30        1   00:00:00          0   00:00:00   00:13:04      1:0 
+3125980.ext+     extern        200        7   00:00:00          6   00:00:00   00:13:04      0:0 
+3125980.0      mrchem.x        200       20   00:13:00         19   00:46:12   00:13:01      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3125980                                                                          
+3125980.bat+     14732K          0     14732K        0              0          0 
+3125980.ext+          0          6          0        0              6          0 
+3125980.0      3365032K          4 2441588531        0             12          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3125980                                                                                               
+3125980.bat+        3.58M               0          3.58M        0.02M                0          0.02M 
+3125980.ext+        0.00M               6          0.00M            0                6              0 
+3125980.0           2.67M               4          2.66M       72.63M                4         22.55M 
+
+Job 3125980 completed at Thu Jul 8 02:50:08 CEST 2021

@@ -1,0 +1,77 @@
+1
+2
+3
+4 total magnetization = 2.00 Bohr mag/cell
+5
+6 total magnetization = 1.00 Bohr mag/cell
+7
+8
+9 total magnetization = 1.00 Bohr mag/cell
+10
+11 total magnetization = 1.00 Bohr mag/cell
+12
+13 total magnetization = 2.00 Bohr mag/cell
+14 total magnetization = 1.00 Bohr mag/cell
+15
+16
+17
+18 total magnetization = 2.00 Bohr mag/cell
+19 total magnetization = 1.00 Bohr mag/cell
+20
+21 total magnetization = 1.00 Bohr mag/cell
+22 total magnetization = 1.00 Bohr mag/cell
+23 total magnetization = 1.00 Bohr mag/cell
+24
+25
+26
+27 total magnetization = 2.00 Bohr mag/cell
+28 total magnetization = 1.00 Bohr mag/cell
+29 total magnetization = 2.00 Bohr mag/cell
+30 total magnetization = 1.00 Bohr mag/cell
+31
+32
+33
+34 total magnetization = 1.00 Bohr mag/cell
+35
+36 total magnetization = 1.00 Bohr mag/cell
+37
+38
+39
+40
+41 total magnetization = 1.00 Bohr mag/cell
+42
+43
+44
+45
+46
+47
+48 total magnetization = 2.00 Bohr mag/cell
+49
+50 total magnetization = 1.00 Bohr mag/cell
+51
+52 total magnetization = 1.00 Bohr mag/cell
+53
+54
+55 total magnetization = 1.00 Bohr mag/cell
+56
+57
+58
+59 total magnetization = 1.00 Bohr mag/cell
+60 total magnetization = 1.00 Bohr mag/cell
+61 total magnetization = 2.00 Bohr mag/cell
+62
+63
+64 total magnetization = 1.00 Bohr mag/cell
+65
+66 total magnetization = 1.00 Bohr mag/cell
+67
+68
+69
+70
+71
+72 total magnetization = 1.00 Bohr mag/cell
+73 total magnetization = 2.00 Bohr mag/cell
+74 total magnetization = 3.00 Bohr mag/cell
+75 total magnetization = 1.00 Bohr mag/cell
+76
+

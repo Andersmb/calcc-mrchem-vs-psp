@@ -1,0 +1,30 @@
+Starting job 3126016 on c5-[1,4,15,18-20,24-25] at Thu Jul 8 03:34:48 CEST 2021
+
+Copying 69_pbe0_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 69_pbe0_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3126016        69_pbe0_        200                                             00:11:36      1:0 
+3126016.bat+      batch         10        1   00:00:00          0   00:00:00   00:11:36      1:0 
+3126016.ext+     extern        200        8   00:00:00          6   00:00:00   00:11:36      0:0 
+3126016.0      mrchem.x        200       20   00:11:25         19   00:36:21   00:11:28      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3126016                                                                          
+3126016.bat+     14800K          0     14800K        0              0          0 
+3126016.ext+          0          6          0        0              6          0 
+3126016.0      2918324K          0 1713178419        0              6          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3126016                                                                                               
+3126016.bat+        3.55M               0          3.55M        0.02M                0          0.02M 
+3126016.ext+        0.00M               6          0.00M            0                6              0 
+3126016.0           2.06M               2          2.05M       58.91M                2          7.56M 
+
+Job 3126016 completed at Thu Jul 8 03:46:24 CEST 2021

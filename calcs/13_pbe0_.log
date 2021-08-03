@@ -1,0 +1,30 @@
+Starting job 3213387 on c5-13,c10-38,c11-55 at Tue Aug 3 12:32:49 CEST 2021
+
+Copying 13_pbe0_.out to /cluster/home/ambr/projects/psp/calcs/triplets
+Copying 13_pbe0_.json to /cluster/home/ambr/projects/psp/calcs/triplets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3213387        13_pbe0_        120                                             00:16:21      1:0 
+3213387.bat+      batch         36        1   00:00:00          0   00:00:00   00:16:21      1:0 
+3213387.ext+     extern        120        3   00:00:00          2   00:00:00   00:16:21      0:0 
+3213387.0      mrchem.x        120       20   00:16:15         19   00:35:40   00:16:16      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3213387                                                                          
+3213387.bat+     14236K          0     14236K        0              0          0 
+3213387.ext+          0          2          0        0              2          0 
+3213387.0      2193316K         12 1996432588        0              4          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3213387                                                                                               
+3213387.bat+       85.59M               0         85.59M       81.91M                0         81.91M 
+3213387.ext+        0.00M               2          0.00M            0                2              0 
+3213387.0          13.84M              12          6.58M       45.19M               12         16.28M 
+
+Job 3213387 completed at Tue Aug 3 12:49:10 CEST 2021

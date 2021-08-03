@@ -1,0 +1,6 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 3125966.0 ON c1-32 CANCELLED AT 2021-07-09T02:29:29 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 3125966 ON c1-32 CANCELLED AT 2021-07-09T02:29:29 DUE TO TIME LIMIT ***
+srun: error: Unable to create step for job 3149305: More processors requested than permitted
+cp: cannot stat ‘orbitals/*’: No such file or directory
+cp: cannot stat ‘checkpoint/*’: No such file or directory

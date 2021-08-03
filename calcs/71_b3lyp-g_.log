@@ -1,0 +1,30 @@
+Starting job 3126021 on c5-[35,41-42,44-46,51,56-57] at Thu Jul 8 03:38:39 CEST 2021
+
+Copying 71_b3lyp-g_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 71_b3lyp-g_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3126021      71_b3lyp-+        200                                             00:07:01      1:0 
+3126021.bat+      batch         10        1   00:00:00          0   00:00:00   00:07:01      1:0 
+3126021.ext+     extern        200        9   00:00:00          4   00:00:00   00:07:01      0:0 
+3126021.0      mrchem.x        200       20   00:06:57         19   00:25:54   00:07:00      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3126021                                                                          
+3126021.bat+     14840K          0     14840K        0              0          0 
+3126021.ext+          0          4          0        0              4          0 
+3126021.0      2433904K          7 1734611353        0             16          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3126021                                                                                               
+3126021.bat+        3.55M               0          3.55M        0.02M                0          0.02M 
+3126021.ext+        0.00M               4          0.00M            0                4              0 
+3126021.0           2.06M               2          2.05M       51.07M                7          9.91M 
+
+Job 3126021 completed at Thu Jul 8 03:45:41 CEST 2021

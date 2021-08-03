@@ -1,0 +1,30 @@
+Starting job 3213314 on c11-[49-51] at Tue Aug 3 12:25:31 CEST 2021
+
+Copying 64_pbe0_.out to /cluster/home/ambr/projects/psp/calcs/doublets
+Copying 64_pbe0_.json to /cluster/home/ambr/projects/psp/calcs/doublets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3213314        64_pbe0_        120                                             00:06:33      1:0 
+3213314.bat+      batch         42        1   00:00:00          0   00:00:00   00:06:33      1:0 
+3213314.ext+     extern        120        3   00:00:00          0   00:00:00   00:06:33      0:0 
+3213314.0      mrchem.x        120       20   00:06:28         19   00:15:33   00:06:30      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3213314                                                                          
+3213314.bat+     14240K          0     14240K        0              0          0 
+3213314.ext+          0          0          0        0              0          0 
+3213314.0      2223316K          0 1907202252        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3213314                                                                                               
+3213314.bat+       50.27M               0         50.27M       46.55M                0         46.55M 
+3213314.ext+        0.00M               0          0.00M            0                0              0 
+3213314.0          11.97M               1          4.99M       45.22M                0         11.97M 
+
+Job 3213314 completed at Tue Aug 3 12:32:05 CEST 2021

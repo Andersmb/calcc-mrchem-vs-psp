@@ -1,0 +1,30 @@
+Starting job 3125963 on c2-24,c3-20,c5-11,c10-[40-41,47,49,51] at Thu Jul 8 02:21:42 CEST 2021
+
+Copying 46_b3lyp-g_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 46_b3lyp-g_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3125963      46_b3lyp-+        200                                             05:39:14      1:0 
+3125963.bat+      batch         20        1   00:00:01          0   00:00:01   05:39:14      1:0 
+3125963.ext+     extern        200        8   00:00:00          7   00:00:00   05:39:14      0:0 
+3125963.0      mrchem.x        200       20   05:39:05         19   08:21:33   05:39:08      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3125963                                                                          
+3125963.bat+     14792K          0     14792K        0              0          0 
+3125963.ext+          0          7          0        0              7          0 
+3125963.0      4890920K          6   3905719K        0             17          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3125963                                                                                               
+3125963.bat+        3.55M               0          3.55M        0.02M                0          0.02M 
+3125963.ext+        0.00M               7          0.00M            0                7              0 
+3125963.0           2.67M               6          2.51M       94.19M                6         58.13M 
+
+Job 3125963 completed at Thu Jul 8 08:00:56 CEST 2021

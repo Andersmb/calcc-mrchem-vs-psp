@@ -1,0 +1,30 @@
+Starting job 3213290 on c10-[16-18] at Tue Aug 3 12:14:55 CEST 2021
+
+Copying 14_b3lyp-g_.out to /cluster/home/ambr/projects/psp/calcs/doublets
+Copying 14_b3lyp-g_.json to /cluster/home/ambr/projects/psp/calcs/doublets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3213290      14_b3lyp-+        120                                             00:10:54      1:0 
+3213290.bat+      batch         42        1   00:00:00          0   00:00:00   00:10:54      1:0 
+3213290.ext+     extern        120        3   00:00:00          2   00:00:00   00:10:54      0:0 
+3213290.0      mrchem.x        120       20   00:10:45         19   00:32:53   00:10:49      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3213290                                                                          
+3213290.bat+     14228K          0     14228K        0              0          0 
+3213290.ext+          0          2          0        0              2          0 
+3213290.0      2514964K          3 2185229721        0             10          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3213290                                                                                               
+3213290.bat+       91.21M               0         91.21M       87.49M                0         87.49M 
+3213290.ext+        0.00M               2          0.00M            0                2              0 
+3213290.0          13.84M               5          7.04M       47.18M                0         19.02M 
+
+Job 3213290 completed at Tue Aug 3 12:25:49 CEST 2021

@@ -1,0 +1,488 @@
+{
+  "input": {
+    "molecule": {
+      "charge": 0,
+      "coords": [
+        {
+          "atom": "o",
+          "xyz": [
+            0.0,
+            0.0,
+            0.12401965274617992
+          ]
+        },
+        {
+          "atom": "h",
+          "xyz": [
+            0.0,
+            1.43090052,
+            -0.9843046372538201
+          ]
+        },
+        {
+          "atom": "h",
+          "xyz": [
+            0.0,
+            -1.43090052,
+            -0.9843046372538201
+          ]
+        }
+      ],
+      "multiplicity": 1
+    },
+    "mpi": {
+      "bank_size": 1,
+      "numerically_exact": false,
+      "shared_memory_size": 10000
+    },
+    "mra": {
+      "basis_order": 9,
+      "basis_type": "interpolating",
+      "boxes": [
+        2,
+        2,
+        2
+      ],
+      "corner": [
+        -1,
+        -1,
+        -1
+      ],
+      "max_scale": 20,
+      "min_scale": -4
+    },
+    "printer": {
+      "file_name": "7_pbe0_.inp",
+      "print_level": 0,
+      "print_mpi": false,
+      "print_prec": 6,
+      "print_width": 75
+    },
+    "rsp_calculations": {},
+    "scf_calculation": {
+      "fock_operator": {
+        "coulomb_operator": {
+          "poisson_prec": 1e-06,
+          "shared_memory": true
+        },
+        "exchange_operator": {
+          "exchange_prec": -1.0,
+          "poisson_prec": 1e-06
+        },
+        "kinetic_operator": {
+          "derivative": "abgv_55"
+        },
+        "nuclear_operator": {
+          "proj_prec": 1e-06,
+          "shared_memory": true,
+          "smooth_prec": 1e-06
+        },
+        "xc_operator": {
+          "shared_memory": false,
+          "xc_functional": {
+            "cutoff": 0.0,
+            "functionals": [
+              {
+                "coef": 1.0,
+                "name": "pbe0"
+              }
+            ],
+            "spin": false
+          }
+        }
+      },
+      "initial_guess": {
+        "file_basis": "initial_guess/mrchem.bas",
+        "file_chk": "checkpoint/phi_scf",
+        "file_gto_a": "initial_guess/mrchem.moa",
+        "file_gto_b": "initial_guess/mrchem.mob",
+        "file_gto_p": "initial_guess/mrchem.mop",
+        "file_phi_a": "initial_guess/phi_a_scf",
+        "file_phi_b": "initial_guess/phi_b_scf",
+        "file_phi_p": "initial_guess/phi_p_scf",
+        "localize": false,
+        "method": "DFT (PBE0)",
+        "prec": 0.001,
+        "restricted": true,
+        "type": "sad",
+        "zeta": 2
+      },
+      "properties": {
+        "dipole_moment": {
+          "dip-1": {
+            "operator": "h_e_dip",
+            "precision": 1e-06,
+            "r_O": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "scf_solver": {
+        "checkpoint": false,
+        "energy_thrs": 1e-06,
+        "file_chk": "checkpoint/phi_scf",
+        "final_prec": 1e-06,
+        "helmholtz_prec": -1.0,
+        "kain": 10,
+        "localize": false,
+        "max_iter": 200,
+        "method": "DFT (PBE0)",
+        "orbital_thrs": 9.999999999999999e-06,
+        "rotation": 0,
+        "start_prec": 1e-06
+      },
+      "write_orbitals": {
+        "file_phi_a": "orbitals/phi_a_scf",
+        "file_phi_b": "orbitals/phi_b_scf",
+        "file_phi_p": "orbitals/phi_p_scf"
+      }
+    },
+    "schema_name": "mrchem_input",
+    "schema_version": 1
+  },
+  "output": {
+    "properties": {
+      "center_of_mass": [
+        0.0,
+        2.5684483195566945e-18,
+        -9.617735464328999e-18
+      ],
+      "charge": 0,
+      "dipole_moment": {
+        "dip-1": {
+          "magnitude": 0.7310128621594177,
+          "r_O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "vector": [
+            2.7860651771070705e-11,
+            1.0824438917011644e-07,
+            -0.7310128621594097
+          ],
+          "vector_el": [
+            0.0,
+            1.0822213208505257e-07,
+            0.24543919036211947
+          ],
+          "vector_nuc": [
+            2.787287159223088e-11,
+            2.2257085063870363e-11,
+            -0.9764520525215292
+          ]
+        }
+      },
+      "geometry": [
+        {
+          "symbol": "O",
+          "xyz": [
+            0.0,
+            0.0,
+            0.12401965274617992
+          ]
+        },
+        {
+          "symbol": "H",
+          "xyz": [
+            0.0,
+            1.43090052,
+            -0.9843046372538201
+          ]
+        },
+        {
+          "symbol": "H",
+          "xyz": [
+            0.0,
+            -1.43090052,
+            -0.9843046372538201
+          ]
+        }
+      ],
+      "multiplicity": 1,
+      "orbital_energies": {
+        "energy": [
+          -19.20968688048803,
+          -1.045033898013186,
+          -0.5510764341063813,
+          -0.41086017737913494,
+          -0.3340228292065662
+        ],
+        "occupation": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "spin": [
+          "p",
+          "p",
+          "p",
+          "p",
+          "p"
+        ],
+        "sum_occupied": -43.1013604383866
+      },
+      "scf_energy": {
+        "E_ee": 46.72287866352559,
+        "E_eext": 0.0,
+        "E_el": -85.57729816872603,
+        "E_en": -199.1649365189495,
+        "E_kin": 76.11551021899994,
+        "E_next": 0.0,
+        "E_nn": 9.189534425159426,
+        "E_nuc": 9.189534425159426,
+        "E_tot": -76.38776374356661,
+        "E_x": -2.2313595666825456,
+        "E_xc": -7.019390965619525
+      }
+    },
+    "provenance": {
+      "creator": "MRChem",
+      "mpi_processes": 20,
+      "nthreads": 10,
+      "routine": "mrchem.x",
+      "total_cores": 200,
+      "version": "1.0.1"
+    },
+    "rsp_calculations": null,
+    "scf_calculation": {
+      "initial_energy": {
+        "E_ee": 48.73040112389146,
+        "E_eext": 0.0,
+        "E_el": -85.26005495082347,
+        "E_en": -205.2805592364943,
+        "E_kin": 80.84385802436016,
+        "E_next": 0.0,
+        "E_nn": 9.189534425159426,
+        "E_nuc": 9.189534425159426,
+        "E_tot": -76.07052052566405,
+        "E_x": -2.3023203357449638,
+        "E_xc": -7.251434526835839
+      },
+      "scf_solver": {
+        "converged": true,
+        "cycles": [
+          {
+            "energy_terms": {
+              "E_ee": 45.50797437620336,
+              "E_eext": 0.0,
+              "E_el": -85.5256780428608,
+              "E_en": -198.0400467097727,
+              "E_kin": 76.10368848840935,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.33614361770138,
+              "E_x": -2.190443313289514,
+              "E_xc": -6.9068508844112815
+            },
+            "energy_total": -76.33614361770138,
+            "energy_update": 0.26562309203733037,
+            "mo_residual": 0.2714274563786408,
+            "wall_time": 37.732085463
+          },
+          {
+            "energy_terms": {
+              "E_ee": 47.36844854420197,
+              "E_eext": 0.0,
+              "E_el": -85.56843596108668,
+              "E_en": -200.54488279736495,
+              "E_kin": 76.93872535014768,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.37890153592726,
+              "E_x": -2.2507191741377417,
+              "E_xc": -7.0800078839336305
+            },
+            "energy_total": -76.37890153592726,
+            "energy_update": 0.042757918225873937,
+            "mo_residual": 0.14217742461691368,
+            "wall_time": 33.836423873
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.4958470420284,
+              "E_eext": 0.0,
+              "E_el": -85.57468529718653,
+              "E_en": -198.89389918488683,
+              "E_kin": 76.03991400239543,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38515087202711,
+              "E_x": -2.222133922969907,
+              "E_xc": -6.994413233753638
+            },
+            "energy_total": -76.38515087202711,
+            "energy_update": 0.0062493360998558956,
+            "mo_residual": 0.05307036409897845,
+            "wall_time": 32.606239626
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.75448003892558,
+              "E_eext": 0.0,
+              "E_el": -85.5764992605713,
+              "E_en": -199.27466489536144,
+              "E_kin": 76.19459066849238,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38696483541187,
+              "E_x": -2.2310199754391,
+              "E_xc": -7.019885097188723
+            },
+            "energy_total": -76.38696483541187,
+            "energy_update": 0.0018139633847624737,
+            "mo_residual": 0.020416573074803265,
+            "wall_time": 33.137034353
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.73506343792364,
+              "E_eext": 0.0,
+              "E_el": -85.57725197202357,
+              "E_en": -199.1537806894419,
+              "E_kin": 76.09225103635474,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38771754686415,
+              "E_x": -2.2313449009213007,
+              "E_xc": -7.0194408559387576
+            },
+            "energy_total": -76.38771754686415,
+            "energy_update": 0.0007527114522787315,
+            "mo_residual": 0.013845176837571554,
+            "wall_time": 32.422950672
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.719010199404416,
+              "E_eext": 0.0,
+              "E_el": -85.57729179364127,
+              "E_en": -199.14651758794102,
+              "E_kin": 76.10010024620529,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38775736848184,
+              "E_x": -2.231154696746498,
+              "E_xc": -7.018729954563452
+            },
+            "energy_total": -76.38775736848184,
+            "energy_update": 3.9821617690449784e-05,
+            "mo_residual": 0.0031030656167509835,
+            "wall_time": 33.241754874
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.72240963812868,
+              "E_eext": 0.0,
+              "E_el": -85.57729745509408,
+              "E_en": -199.16331273908673,
+              "E_kin": 76.11433629303495,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38776302993466,
+              "E_x": -2.2313656706129805,
+              "E_xc": -7.019364976558011
+            },
+            "energy_total": -76.38776302993466,
+            "energy_update": 5.6614528176623935e-06,
+            "mo_residual": 0.0012767744225224316,
+            "wall_time": 33.405344845
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.72290831819274,
+              "E_eext": 0.0,
+              "E_el": -85.57729810041477,
+              "E_en": -199.16595493715863,
+              "E_kin": 76.11651793751625,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38776367525534,
+              "E_x": -2.2313644968556967,
+              "E_xc": -7.0194049221094295
+            },
+            "energy_total": -76.38776367525534,
+            "energy_update": 6.453206822243374e-07,
+            "mo_residual": 0.00035804820156456037,
+            "wall_time": 34.291933991
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.722882746162824,
+              "E_eext": 0.0,
+              "E_el": -85.57729816258569,
+              "E_en": -199.16495471841938,
+              "E_kin": 76.11552304230894,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38776373742627,
+              "E_x": -2.2313590179396714,
+              "E_xc": -7.019390214698408
+            },
+            "energy_total": -76.38776373742627,
+            "energy_update": 6.21709261849901e-08,
+            "mo_residual": 0.00011080563758941497,
+            "wall_time": 34.3707456
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.7228611011268,
+              "E_eext": 0.0,
+              "E_el": -85.57729816824374,
+              "E_en": -199.16478927470786,
+              "E_kin": 76.11537547152943,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38776374308432,
+              "E_x": -2.2313582418032745,
+              "E_xc": -7.019387224388831
+            },
+            "energy_total": -76.38776374308432,
+            "energy_update": 5.658051804857678e-09,
+            "mo_residual": 3.667839224048212e-05,
+            "wall_time": 35.257080819
+          },
+          {
+            "energy_terms": {
+              "E_ee": 46.72287866352559,
+              "E_eext": 0.0,
+              "E_el": -85.57729816872603,
+              "E_en": -199.1649365189495,
+              "E_kin": 76.11551021899994,
+              "E_next": 0.0,
+              "E_nn": 9.189534425159426,
+              "E_nuc": 9.189534425159426,
+              "E_tot": -76.38776374356661,
+              "E_x": -2.2313595666825456,
+              "E_xc": -7.019390965619525
+            },
+            "energy_total": -76.38776374356661,
+            "energy_update": 4.822879873245256e-10,
+            "mo_residual": 1.0057087451710436e-05,
+            "wall_time": 36.731535201
+          }
+        ],
+        "wall_time": 377.115645623
+      },
+      "success": true
+    },
+    "schema_name": "mrchem_output",
+    "schema_version": 1,
+    "success": true
+  }
+}

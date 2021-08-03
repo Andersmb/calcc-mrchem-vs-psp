@@ -1,0 +1,389 @@
+                                                                           
+                                                                           
+***************************************************************************
+***                                                                     ***
+***                                                                     ***
+***          __  __ ____   ____ _                                       ***
+***         |  \/  |  _ \ / ___| |__   ___ _ __ ___                     ***
+***         | |\/| | |_) | |   | '_ \ / _ \ '_ ` _ \                    ***
+***         | |  | |  _ <| |___| | | |  __/ | | | | |                   ***
+***         |_|  |_|_| \_\\____|_| |_|\___|_| |_| |_|                   ***
+***                                                                     ***
+***         VERSION            1.0.1                                    ***
+***                                                                     ***
+***         Git branch         HEAD                                     ***
+***         Git commit hash    9309e3e1e52e5319b766-dirty               ***
+***         Git commit author  Stig Rune Jensen                         ***
+***         Git commit date    Fri Dec 4 16:08:55 2020 +0100            ***
+***                                                                     ***
+***         Contact: luca.frediani@uit.no                               ***
+***                                                                     ***
+***         Radovan Bast            Magnar Bjorgve                      ***
+***         Roberto Di Remigio      Antoine Durdek                      ***
+***         Luca Frediani           Gabriel Gerez                       ***
+***         Stig Rune Jensen        Jonas Juselius                      ***
+***         Rune Monstad            Peter Wind                          ***
+***                                                                     ***
+***************************************************************************
+
+---------------------------------------------------------------------------
+
+ MPI processes           :        (1 bank)                              20
+ OpenMP threads          :                                              10
+ Total cores             :                                             200
+                                                                           
+---------------------------------------------------------------------------
+
+XCFun DFT library Copyright 2009-2020 Ulf Ekstrom and contributors.
+See http://dftlibs.org/xcfun/ for more information.
+
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. For details see the documentation.
+Scientific users of this library should cite
+U. Ekstrom, L. Visscher, R. Bast, A. J. Thorvaldsen and K. Ruud;
+J.Chem.Theor.Comp. 2010, DOI: 10.1021/ct100117s
+
+---------------------------------------------------------------------------
+
+ MRCPP version         : 1.3.6
+ Git branch            : HEAD
+ Git commit hash       : 9309e3e1e52e5319b766-dirty
+ Git commit author     : Stig Rune Jensen
+ Git commit date       : Fri Dec 4 16:08:55 2020 +0100
+
+ Linear algebra        : EIGEN v3.3.7
+ Parallelization       : MPI/OpenMP (10 threads)
+
+---------------------------------------------------------------------------
+
+
+                                                                           
+===========================================================================
+                         MultiResolution Analysis
+---------------------------------------------------------------------------
+ polynomial order      : 9
+ polynomial type       : Interpolating
+---------------------------------------------------------------------------
+ total boxes           : 8
+ boxes                 : [          2           2           2 ]
+ unit lengths          : [   16.00000    16.00000    16.00000 ]
+ scaling factor        : [    1.00000     1.00000     1.00000 ]
+ lower bounds          : [  -16.00000   -16.00000   -16.00000 ]
+ upper bounds          : [   16.00000    16.00000    16.00000 ]
+ total length          : [   32.00000    32.00000    32.00000 ]
+===========================================================================
+
+
+                                                                           
+***************************************************************************
+***                                                                     ***
+***                        Initializing Molecule                        ***
+***                                                                     ***
+***************************************************************************
+                                                                           
+                                                                           
+===========================================================================
+                                 Molecule
+---------------------------------------------------------------------------
+ Charge                  :                                               0
+ Multiplicity            :                                               1
+---------------------------------------------------------------------------
+    N    Atom            :               x               y               z
+---------------------------------------------------------------------------
+    0      Li            :        0.000000        0.000000       -2.525619
+    1      Li            :        0.000000        0.000000        2.525619
+---------------------------------------------------------------------------
+ Center of mass          :        0.000000        0.000000        0.000000
+===========================================================================
+
+
+                                                                           
+***************************************************************************
+***                                                                     ***
+***                 Computing Ground State Wavefunction                 ***
+***                                                                     ***
+***************************************************************************
+                                                                           
+                                                                           
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Calculation             : Compute initial orbitals
+ Method                  : Diagonalize SAD Hamiltonian
+ Precision               : 1.00000e-03
+ Restricted              : True
+ Functional              : LDA (SVWN5)
+ AO basis                : Hydrogenic orbitals
+ Zeta quality            : 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+===========================================================================
+                            Molecular Orbitals
+---------------------------------------------------------------------------
+ Alpha electrons         :                                               3
+ Beta electrons          :                                               3
+ Total electrons         :                                               6
+---------------------------------------------------------------------------
+    n  Occ Spin          :                                            Norm
+---------------------------------------------------------------------------
+    0    2    p          :                              1.000001065911e+00
+    1    2    p          :                              1.000012600459e+00
+    2    2    p          :                              9.999999284050e-01
+===========================================================================
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Calculation             : Compute initial energy
+ Method                  : DFT (PBE0)
+ Precision               : 1.00000e-03
+ Localization            : Off
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+===========================================================================
+                        Molecular Energy (initial)
+---------------------------------------------------------------------------
+ Kinetic energy          :            (au)                 15.981999040476
+ E-N energy              :            (au)                -39.201358597750
+ Coulomb energy          :            (au)                 10.316575085180
+ Exchange energy         :            (au)                 -0.902751980233
+ X-C energy              :            (au)                 -2.847091821863
+ Ext. field (el)         :            (au)                  0.000000000000
+---------------------------------------------------------------------------
+ N-N energy              :            (au)                  1.781741578233
+ Ext. field (nuc)        :            (au)                  0.000000000000
+---------------------------------------------------------------------------
+ Electronic energy       :            (au)                -16.652628274191
+ Nuclear energy          :            (au)                  1.781741578233
+---------------------------------------------------------------------------
+ Total energy            :            (au)             -1.487088669596e+01
+                         :      (kcal/mol)             -9.331622214140e+03
+                         :        (kJ/mol)             -3.904350736930e+04
+                         :            (eV)             -4.046574239186e+02
+===========================================================================
+
+
+===========================================================================
+                        Orbital Energies (initial)
+---------------------------------------------------------------------------
+    n  Occ Spin          :                                         Epsilon
+---------------------------------------------------------------------------
+    0    2    p          :            (au)                 -1.959519314740
+    1    2    p          :            (au)                 -1.941334085455
+    2    2    p          :            (au)                 -0.117355907737
+---------------------------------------------------------------------------
+ Sum occupied            :            (au)                 -8.036418615866
+===========================================================================
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Calculation             : Optimize ground state orbitals
+ Method                  : DFT (PBE0)
+ Checkpointing           : Off
+ Max iterations          : 200
+ KAIN solver             : 10
+ Localization            : Off
+ Diagonalization         : First two iterations
+ Start precision         : 1.00000e-06
+ Final precision         : 1.00000e-06
+ Helmholtz precision     : Dynamic
+ Energy threshold        : 1.00000e-06
+ Orbital threshold       : 1.00000e-05
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+===========================================================================
+ Iter           MO residual             Total energy                Update
+---------------------------------------------------------------------------
+    0          1.732051e+00         -14.870886695958         -1.487089e+01
+    1          1.149991e-01         -14.960087127937         -8.920043e-02
+    2          3.049564e-02         -14.963775203234         -3.688075e-03
+    3          1.871091e-02         -14.964471492584         -6.962893e-04
+    4          4.018795e-02         -14.964941330600         -4.698380e-04
+    5          2.123956e-03         -14.964974067347         -3.273675e-05
+    6          1.512613e-03         -14.964975997490         -1.930142e-06
+    7          2.079262e-04         -14.964976057667         -6.017729e-08
+    8          8.136497e-05         -14.964976080308         -2.264106e-08
+    9          1.999834e-05         -14.964976081693         -1.384610e-09
+   10          9.679597e-05         -14.964976080151          1.541760e-09
+   11          2.445503e-03         -14.964976054868          2.528268e-08
+   12          1.196405e-02         -14.964976074957         -2.008862e-08
+   13          8.055328e-03         -14.964976111974         -3.701776e-08
+   14          8.300858e-02         -14.964976384108         -2.721334e-07
+   15          1.416645e-01         -14.964978944097         -2.559989e-06
+   16          2.409302e+00         -14.964933916105          4.502799e-05
+   17          2.573424e+00         -14.964923880770          1.003533e-05
+   18          1.848086e+00         -14.964984240340         -6.035957e-05
+   19          1.659447e-04         -14.964987628097         -3.387757e-06
+   20          8.793572e-05         -14.964988489512         -8.614147e-07
+   21          7.305552e-05         -14.964989315155         -8.256437e-07
+   22          5.046390e-05         -14.964989618536         -3.033806e-07
+   23          1.824741e-05         -14.964989537445          8.109078e-08
+   24          1.967826e-05         -14.964989523385          1.406040e-08
+   25          8.054924e-06         -14.964989543016         -1.963183e-08
+---------------------------------------------------------------------------
+                      SCF converged in 25 iterations!
+===========================================================================
+
+
+                                                                           
+***************************************************************************
+***                                                                     ***
+***                    Printing Molecular Properties                    ***
+***                                                                     ***
+***************************************************************************
+                                                                           
+                                                                           
+===========================================================================
+                                 Molecule
+---------------------------------------------------------------------------
+ Charge                  :                                               0
+ Multiplicity            :                                               1
+---------------------------------------------------------------------------
+    N    Atom            :               x               y               z
+---------------------------------------------------------------------------
+    0      Li            :        0.000000        0.000000       -2.525619
+    1      Li            :        0.000000        0.000000        2.525619
+---------------------------------------------------------------------------
+ Center of mass          :        0.000000        0.000000        0.000000
+===========================================================================
+
+
+===========================================================================
+                         Molecular Energy (final)
+---------------------------------------------------------------------------
+ Kinetic energy          :            (au)                 14.867908445541
+ E-N energy              :            (au)                -38.014678301683
+ Coulomb energy          :            (au)                 10.047098516861
+ Exchange energy         :            (au)                 -0.887797353729
+ X-C energy              :            (au)                 -2.759262428238
+ Ext. field (el)         :            (au)                  0.000000000000
+---------------------------------------------------------------------------
+ N-N energy              :            (au)                  1.781741578233
+ Ext. field (nuc)        :            (au)                  0.000000000000
+---------------------------------------------------------------------------
+ Electronic energy       :            (au)                -16.746731121249
+ Nuclear energy          :            (au)                  1.781741578233
+---------------------------------------------------------------------------
+ Total energy            :            (au)             -1.496498954302e+01
+                         :      (kcal/mol)             -9.390672641729e+03
+                         :        (kJ/mol)             -3.929057435849e+04
+                         :            (eV)             -4.072180927242e+02
+===========================================================================
+
+
+===========================================================================
+                         Orbital Energies (final)
+---------------------------------------------------------------------------
+    n  Occ Spin          :                                         Epsilon
+---------------------------------------------------------------------------
+    0    2    p          :            (au)                 -2.020966111068
+    1    2    p          :            (au)                 -2.020570122900
+    2    2    p          :            (au)                 -0.139428940061
+---------------------------------------------------------------------------
+ Sum occupied            :            (au)                 -8.361930348058
+===========================================================================
+
+
+===========================================================================
+                           Dipole Moment (dip-1)
+---------------------------------------------------------------------------
+ r_O                     :        0.000000        0.000000        0.000000
+---------------------------------------------------------------------------
+ Electronic vector       :        0.000000        0.000000        0.000124
+ Magnitude               :            (au)                        0.000124
+                         :         (Debye)                        0.000315
+---------------------------------------------------------------------------
+ Nuclear vector          :        0.000000        0.000000       -0.000000
+ Magnitude               :            (au)                        0.000000
+                         :         (Debye)                        0.000000
+---------------------------------------------------------------------------
+ Total vector            :        0.000000        0.000000        0.000124
+ Magnitude               :            (au)                        0.000124
+                         :         (Debye)                        0.000315
+===========================================================================
+
+
+                                                                           
+                                                                           
+***************************************************************************
+***                                                                     ***
+***                            Exiting MRChem                           ***
+***                                                                     ***
+***                       Wall time :  0h 11m 24s                       ***
+***                                                                     ***
+***************************************************************************
+                                                                           
+                                                                           
+[1625708777.329209] [c5-15:46574:0]          mpool.c:43   UCX  WARN  object 0xc3be40 was not returned to mpool ucp_requests
+[1625708777.329225] [c5-15:46574:0]          mpool.c:43   UCX  WARN  object 0xc3bf40 was not returned to mpool ucp_requests
+[1625708777.329227] [c5-15:46574:0]          mpool.c:43   UCX  WARN  object 0xc3c040 was not returned to mpool ucp_requests
+[1625708777.334270] [c5-24:21644:0]          mpool.c:43   UCX  WARN  object 0x14e5500 was not returned to mpool ucp_requests
+[1625708777.334285] [c5-24:21644:0]          mpool.c:43   UCX  WARN  object 0x14e5e00 was not returned to mpool ucp_requests
+[1625708777.334287] [c5-24:21644:0]          mpool.c:43   UCX  WARN  object 0x14e5f00 was not returned to mpool ucp_requests
+[1625708777.331271] [c5-20:68900:0]          mpool.c:43   UCX  WARN  object 0x1b1bb40 was not returned to mpool ucp_requests
+[1625708777.331286] [c5-20:68900:0]          mpool.c:43   UCX  WARN  object 0x1b1bc40 was not returned to mpool ucp_requests
+[1625708777.331287] [c5-20:68900:0]          mpool.c:43   UCX  WARN  object 0x1b1bd40 was not returned to mpool ucp_requests
+[1625708777.331289] [c5-20:68900:0]          mpool.c:43   UCX  WARN  object 0x1b1be40 was not returned to mpool ucp_requests
+[1625708777.331290] [c5-20:68900:0]          mpool.c:43   UCX  WARN  object 0x1b1bf40 was not returned to mpool ucp_requests
+[1625708777.331291] [c5-20:68900:0]          mpool.c:43   UCX  WARN  object 0x1b1c040 was not returned to mpool ucp_requests
+[1625708777.331558] [c5-25:62022:0]          mpool.c:43   UCX  WARN  object 0xe45340 was not returned to mpool ucp_requests
+[1625708777.331573] [c5-25:62022:0]          mpool.c:43   UCX  WARN  object 0xe45440 was not returned to mpool ucp_requests
+[1625708777.331575] [c5-25:62022:0]          mpool.c:43   UCX  WARN  object 0xe45540 was not returned to mpool ucp_requests
+[1625708777.331576] [c5-25:62022:0]          mpool.c:43   UCX  WARN  object 0xe45640 was not returned to mpool ucp_requests
+[1625708777.331577] [c5-25:62022:0]          mpool.c:43   UCX  WARN  object 0xe45740 was not returned to mpool ucp_requests
+[1625708777.331579] [c5-25:62022:0]          mpool.c:43   UCX  WARN  object 0xe45840 was not returned to mpool ucp_requests
+[1625708777.331791] [c5-19:74139:0]          mpool.c:43   UCX  WARN  object 0x22e6b40 was not returned to mpool ucp_requests
+[1625708777.331808] [c5-19:74139:0]          mpool.c:43   UCX  WARN  object 0x22e6c40 was not returned to mpool ucp_requests
+[1625708777.331809] [c5-19:74139:0]          mpool.c:43   UCX  WARN  object 0x22e6d40 was not returned to mpool ucp_requests
+[1625708777.331811] [c5-19:74139:0]          mpool.c:43   UCX  WARN  object 0x22e6e40 was not returned to mpool ucp_requests
+[1625708777.331812] [c5-19:74139:0]          mpool.c:43   UCX  WARN  object 0x22e6f40 was not returned to mpool ucp_requests
+[1625708777.331813] [c5-19:74139:0]          mpool.c:43   UCX  WARN  object 0x22e7040 was not returned to mpool ucp_requests
+[1625708777.332271] [c5-4:43797:0]          mpool.c:43   UCX  WARN  object 0x1d34b40 was not returned to mpool ucp_requests
+[1625708777.332292] [c5-4:43797:0]          mpool.c:43   UCX  WARN  object 0x1d34c40 was not returned to mpool ucp_requests
+[1625708777.332294] [c5-4:43797:0]          mpool.c:43   UCX  WARN  object 0x1d34d40 was not returned to mpool ucp_requests
+[1625708777.332295] [c5-4:43797:0]          mpool.c:43   UCX  WARN  object 0x1d34e40 was not returned to mpool ucp_requests
+[1625708777.332296] [c5-4:43797:0]          mpool.c:43   UCX  WARN  object 0x1d34f40 was not returned to mpool ucp_requests
+[1625708777.332298] [c5-4:43797:0]          mpool.c:43   UCX  WARN  object 0x1d35040 was not returned to mpool ucp_requests
+[1625708777.333584] [c5-18:40525:0]          mpool.c:43   UCX  WARN  object 0x278ee40 was not returned to mpool ucp_requests
+[1625708777.333603] [c5-18:40525:0]          mpool.c:43   UCX  WARN  object 0x278ef40 was not returned to mpool ucp_requests
+[1625708777.333605] [c5-18:40525:0]          mpool.c:43   UCX  WARN  object 0x278f040 was not returned to mpool ucp_requests
+[1625708777.366831] [c5-4:43798:0]          mpool.c:43   UCX  WARN  object 0x23b7e40 was not returned to mpool ucp_requests
+[1625708777.366846] [c5-4:43798:0]          mpool.c:43   UCX  WARN  object 0x23b8f40 was not returned to mpool ucp_requests
+[1625708777.366848] [c5-4:43798:0]          mpool.c:43   UCX  WARN  object 0x23b9040 was not returned to mpool ucp_requests
+[1625708777.371966] [c5-18:40524:0]          mpool.c:43   UCX  WARN  object 0x255bb40 was not returned to mpool ucp_requests
+[1625708777.371983] [c5-18:40524:0]          mpool.c:43   UCX  WARN  object 0x255bc40 was not returned to mpool ucp_requests
+[1625708777.371985] [c5-18:40524:0]          mpool.c:43   UCX  WARN  object 0x255bd40 was not returned to mpool ucp_requests
+[1625708777.371987] [c5-18:40524:0]          mpool.c:43   UCX  WARN  object 0x255be40 was not returned to mpool ucp_requests
+[1625708777.371988] [c5-18:40524:0]          mpool.c:43   UCX  WARN  object 0x255bf40 was not returned to mpool ucp_requests
+[1625708777.371989] [c5-18:40524:0]          mpool.c:43   UCX  WARN  object 0x255c040 was not returned to mpool ucp_requests
+[1625708777.371391] [c5-15:46573:0]          mpool.c:43   UCX  WARN  object 0x2812b40 was not returned to mpool ucp_requests
+[1625708777.371406] [c5-15:46573:0]          mpool.c:43   UCX  WARN  object 0x2812c40 was not returned to mpool ucp_requests
+[1625708777.371408] [c5-15:46573:0]          mpool.c:43   UCX  WARN  object 0x2812d40 was not returned to mpool ucp_requests
+[1625708777.371410] [c5-15:46573:0]          mpool.c:43   UCX  WARN  object 0x2812e40 was not returned to mpool ucp_requests
+[1625708777.371411] [c5-15:46573:0]          mpool.c:43   UCX  WARN  object 0x2812f40 was not returned to mpool ucp_requests
+[1625708777.371412] [c5-15:46573:0]          mpool.c:43   UCX  WARN  object 0x2813040 was not returned to mpool ucp_requests
+[1625708777.375686] [c5-24:21642:0]          mpool.c:43   UCX  WARN  object 0x291bb40 was not returned to mpool ucp_requests
+[1625708777.375700] [c5-24:21642:0]          mpool.c:43   UCX  WARN  object 0x291bc40 was not returned to mpool ucp_requests
+[1625708777.375702] [c5-24:21642:0]          mpool.c:43   UCX  WARN  object 0x291bd40 was not returned to mpool ucp_requests
+[1625708777.375703] [c5-24:21642:0]          mpool.c:43   UCX  WARN  object 0x291be40 was not returned to mpool ucp_requests
+[1625708777.375704] [c5-24:21642:0]          mpool.c:43   UCX  WARN  object 0x291bf40 was not returned to mpool ucp_requests
+[1625708777.375706] [c5-24:21642:0]          mpool.c:43   UCX  WARN  object 0x291c040 was not returned to mpool ucp_requests
+[1625708777.396945] [c5-19:74141:0]          mpool.c:43   UCX  WARN  object 0x2828600 was not returned to mpool ucp_requests
+[1625708777.396963] [c5-19:74141:0]          mpool.c:43   UCX  WARN  object 0x2828d00 was not returned to mpool ucp_requests
+[1625708777.396965] [c5-19:74141:0]          mpool.c:43   UCX  WARN  object 0x2828f00 was not returned to mpool ucp_requests
+[1625708777.356017] [c5-20:68901:0]          mpool.c:43   UCX  WARN  object 0x20d0000 was not returned to mpool ucp_requests
+[1625708777.356033] [c5-20:68901:0]          mpool.c:43   UCX  WARN  object 0x20d0e00 was not returned to mpool ucp_requests
+[1625708777.356035] [c5-20:68901:0]          mpool.c:43   UCX  WARN  object 0x20d0f00 was not returned to mpool ucp_requests
+[1625708777.373707] [c5-25:62023:0]          mpool.c:43   UCX  WARN  object 0x19433c0 was not returned to mpool ucp_requests
+[1625708777.373722] [c5-25:62023:0]          mpool.c:43   UCX  WARN  object 0x19434c0 was not returned to mpool ucp_requests
+[1625708777.373724] [c5-25:62023:0]          mpool.c:43   UCX  WARN  object 0x19435c0 was not returned to mpool ucp_requests
+[1625708777.374876] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2373a40 was not returned to mpool ucp_requests
+[1625708777.374882] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2374840 was not returned to mpool ucp_requests
+[1625708777.374883] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2374940 was not returned to mpool ucp_requests
+[1625708777.374885] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2374a40 was not returned to mpool ucp_requests
+[1625708777.374886] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2374c40 was not returned to mpool ucp_requests
+[1625708777.374887] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2374d40 was not returned to mpool ucp_requests
+[1625708777.374889] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2374e40 was not returned to mpool ucp_requests
+[1625708777.374890] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2374f40 was not returned to mpool ucp_requests
+[1625708777.374891] [c5-1:20294:0]          mpool.c:43   UCX  WARN  object 0x2375040 was not returned to mpool ucp_requests

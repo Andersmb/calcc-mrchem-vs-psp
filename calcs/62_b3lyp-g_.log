@@ -1,0 +1,30 @@
+Starting job 3126000 on c1-[1,8-9,11,21],c2-[34-35,41,45] at Thu Jul 8 03:16:47 CEST 2021
+
+Copying 62_b3lyp-g_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 62_b3lyp-g_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3126000      62_b3lyp-+        200                                             00:21:06      1:0 
+3126000.bat+      batch         20        1   00:00:00          0   00:00:00   00:21:06      1:0 
+3126000.ext+     extern        200        9   00:00:00          7   00:00:00   00:21:06      0:0 
+3126000.0      mrchem.x        200       20   00:20:57         19   01:35:16   00:20:59      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3126000                                                                          
+3126000.bat+     14844K          0     14844K        0              0          0 
+3126000.ext+          0          7          0        0              7          0 
+3126000.0      3365660K          6 2551952998        0             17          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3126000                                                                                               
+3126000.bat+        3.55M               0          3.55M        0.02M                0          0.02M 
+3126000.ext+        0.00M               7          0.00M            0                7              0 
+3126000.0           2.10M              18          2.05M       64.79M                4         20.01M 
+
+Job 3126000 completed at Thu Jul 8 03:37:54 CEST 2021

@@ -1,0 +1,87 @@
+Starting job 3125988 on c10-[24-25,27,29,31,39,58] at Thu Jul 8 02:46:34 CEST 2021
+
+Copying 57_pbe0_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 57_pbe0_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3125988        57_pbe0_        200                                             01:04:50      1:0 
+3125988.bat+      batch         20        1   00:00:01          0   00:00:01   01:04:50      1:0 
+3125988.ext+     extern        200        7   00:00:00          3   00:00:00   01:04:50      0:0 
+3125988.0      mrchem.x        200       20   01:04:32         19   05:35:08   01:04:34      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3125988                                                                          
+3125988.bat+     14784K          0     14784K        0              0          0 
+3125988.ext+          0          3          0        0              3          0 
+3125988.0      8111396K          2 6169370419        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3125988                                                                                               
+3125988.bat+        3.58M               0          3.58M        0.02M                0          0.02M 
+3125988.ext+        0.00M               3          0.00M            0                3              0 
+3125988.0           2.67M               4          2.66M      180.43M                2         75.77M 
+
+Job 3125988 completed at Thu Jul 8 03:51:25 CEST 2021
+Starting job 3148663 on c2-[3,6,20,24,26],c5-[37,42-44,57] at Wed Jul 14 09:50:55 CEST 2021
+
+Copying 57_pbe0_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 57_pbe0_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3148663        57_pbe0_        100                                             00:03:09      1:0 
+3148663.bat+      batch         10        1   00:00:00          0   00:00:00   00:03:09      1:0 
+3148663.ext+     extern        100       10   00:00:00          9   00:00:00   00:03:09      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3148663                                                                          
+3148663.bat+      6904K          0      6904K        0              0          0 
+3148663.ext+          0          9          0        0              9          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3148663                                                                                               
+3148663.bat+        3.55M               0          3.55M        0.02M                0          0.02M 
+3148663.ext+        0.00M               9          0.00M            0                9              0 
+
+Job 3148663 completed at Wed Jul 14 09:54:04 CEST 2021
+Starting job 3149546 on c1-3,c11-[7-11,14,16] at Wed Jul 14 16:15:40 CEST 2021
+
+Copying 57_pbe0_.out to /cluster/home/ambr/projects/psp/calcs
+Copying 57_pbe0_.json to /cluster/home/ambr/projects/psp/calcs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3149546        57_pbe0_        100                                             02:39:29      1:0 
+3149546.bat+      batch         10        1   00:00:02          0   00:00:02   02:39:29      1:0 
+3149546.ext+     extern        100        8   00:00:00          1   00:00:00   02:39:29      0:0 
+3149546.0      mrchem.x        100       10   01:41:25          9   09:28:30   01:45:10      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3149546                                                                          
+3149546.bat+     14448K          0     14448K        0              0          0 
+3149546.ext+          0          1          0        0              1          0 
+3149546.0     10614080K          3   8804166K        0              1          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3149546                                                                                               
+3149546.bat+        5.53M               0          5.53M        0.06M                0          0.06M 
+3149546.ext+        0.00M               1          0.00M            0                1              0 
+3149546.0           2.67M               3          2.58M      286.26M                1        213.55M 
+
+Job 3149546 completed at Wed Jul 14 18:55:11 CEST 2021

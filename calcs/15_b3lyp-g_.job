@@ -1,0 +1,40 @@
+#! /bin/bash
+
+#-------------------------------------------
+# File generated 2021-07-08 00:19:07.460378
+#-------------------------------------------
+
+#SBATCH --account=nn4654k
+#SBATCH --job-name=15_b3lyp-g_
+#SBATCH --output=15_b3lyp-g_.log
+#SBATCH --error=15_b3lyp-g_.err
+#SBATCH --ntasks=20
+#SBATCH --cpus-per-task=10
+#SBATCH --time=24:00:00
+#SBATCH --mem=100GB
+#SBATCH --mail-type=NONE
+#SBATCH --partition=normal
+
+module load Python/3.8.2-GCCcore-9.3.0
+export OMP_NUM_THREADS=10
+
+set -o errexit
+set -o nounset
+
+cp 15_b3lyp-g_.inp $SCRATCH
+
+cd $SCRATCH
+/cluster/home/ambr/mrchem_master/install-1.0.1/bin/mrchem --launcher 'srun' 15_b3lyp-g_
+
+savefile 15_b3lyp-g_.out
+savefile 15_b3lyp-g_.json
+
+mkdir -p /cluster/projects/nn4654k/ambr/MWorbitals_${SLURM_JOBID}
+cp orbitals/* /cluster/projects/nn4654k/ambr/MWorbitals_${SLURM_JOBID}/
+echo /cluster/projects/nn4654k/ambr/MWorbitals_${SLURM_JOBID} > ${SLURM_SUBMIT_DIR}/15_b3lyp-g_.orbitals
+
+mkdir -p /cluster/projects/nn4654k/ambr/MWcheckpoints_${SLURM_JOBID}
+cp checkpoint/* /cluster/projects/nn4654k/ambr/MWcheckpoints_${SLURM_JOBID}/
+echo /cluster/projects/nn4654k/ambr/MWcheckpoints_${SLURM_JOBID} > ${SLURM_SUBMIT_DIR}/15_b3lyp-g_.checkpoint
+
+exit 0
