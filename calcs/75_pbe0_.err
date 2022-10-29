@@ -1,5 +1,0 @@
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** JOB 3213319 ON c10-22 CANCELLED AT 2021-08-03T13:36:33 ***
-slurmstepd: error: *** STEP 3213319.0 ON c10-22 CANCELLED AT 2021-08-03T13:36:33 ***
-srun: error: c10-24: tasks 7-13: Terminated
-srun: error: c10-25: tasks 14-19: Terminated

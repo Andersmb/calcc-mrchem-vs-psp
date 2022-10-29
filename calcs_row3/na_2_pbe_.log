@@ -1,0 +1,30 @@
+Starting job 3254943 on c1-23,c2-25,c5-29,c11-44 at Tue Aug 10 13:14:40 CEST 2021
+
+Copying na_2_pbe_.out to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+Copying na_2_pbe_.json to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3254943       na_2_pbe_        120                                             00:11:28      1:0 
+3254943.bat+      batch         36        1   00:00:01          0   00:00:01   00:11:28      1:0 
+3254943.ext+     extern        120        4   00:00:00          3   00:00:00   00:11:28      0:0 
+3254943.0      mrchem.x        120       20   00:11:24         19   00:32:04   00:11:26      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3254943                                                                          
+3254943.bat+     14284K          0     14284K        0              0          0 
+3254943.ext+          0          3          0        0              3          0 
+3254943.0      2411536K          5   1904977K        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3254943                                                                                               
+3254943.bat+        3.70M               0          3.70M        0.02M                0          0.02M 
+3254943.ext+        0.00M               3          0.00M            0                3              0 
+3254943.0           2.67M              18          2.12M       53.06M                0         24.41M 
+
+Job 3254943 completed at Tue Aug 10 13:26:08 CEST 2021

@@ -1,0 +1,30 @@
+Starting job 3267558 on c3-[1,4,27],c5-[19,25] at Fri Aug 13 03:22:43 CEST 2021
+
+Copying 13_pbe_.out to /cluster/home/ambr/projects/psp/row12/calcs/triplets
+Copying 13_pbe_.json to /cluster/home/ambr/projects/psp/row12/calcs/triplets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3267558         13_pbe_        120                                             00:10:25      1:0 
+3267558.bat+      batch         24        1   00:00:00          0   00:00:00   00:10:25      1:0 
+3267558.ext+     extern        120        5   00:00:00          0   00:00:00   00:10:25      0:0 
+3267558.0      mrchem.x        120       20   00:10:22         19   00:31:43   00:10:23      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3267558                                                                          
+3267558.bat+     14328K          0     14328K        0              0          0 
+3267558.ext+          0          0          0        0              0          0 
+3267558.0      2516420K          4   1883653K        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3267558                                                                                               
+3267558.bat+        3.70M               0          3.70M        0.02M                0          0.02M 
+3267558.ext+        0.00M               0          0.00M            0                0              0 
+3267558.0           2.06M               0          2.06M        2.10M                0          2.07M 
+
+Job 3267558 completed at Fri Aug 13 03:33:08 CEST 2021

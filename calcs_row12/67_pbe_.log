@@ -1,0 +1,30 @@
+Starting job 3267528 on c2-[27,34,41],c5-[15,19,25] at Thu Aug 12 20:57:42 CEST 2021
+
+Copying 67_pbe_.out to /cluster/home/ambr/projects/psp/row12/calcs/singlets
+Copying 67_pbe_.json to /cluster/home/ambr/projects/psp/row12/calcs/singlets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3267528         67_pbe_        120                                             00:22:52      1:0 
+3267528.bat+      batch         18        1   00:00:00          0   00:00:00   00:22:52      1:0 
+3267528.ext+     extern        120        6   00:00:00          0   00:00:00   00:22:52      0:0 
+3267528.0      mrchem.x        120       20   00:22:49         19   01:14:21   00:22:51      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3267528                                                                          
+3267528.bat+     14368K          0     14368K        0              0          0 
+3267528.ext+          0          0          0        0              0          0 
+3267528.0      4532508K          1 3472994918        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3267528                                                                                               
+3267528.bat+        3.70M               0          3.70M        0.02M                0          0.02M 
+3267528.ext+        0.00M               0          0.00M            0                0              0 
+3267528.0           2.06M               0          2.05M        2.11M                0          2.07M 
+
+Job 3267528 completed at Thu Aug 12 21:20:34 CEST 2021

@@ -1,0 +1,2 @@
+/bin/sh: line 1:  2296 Segmentation fault      (core dumped) srun /cluster/home/ambr/mrchem_master/install-1.0.1/bin/mrchem.x p_10_pbe_.json > p_10_pbe_.out
+cp: cannot stat ‘checkpoint/*’: No such file or directory

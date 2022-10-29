@@ -1,0 +1,30 @@
+Starting job 3267506 on c11-[22,47,52] at Wed Aug 11 12:59:29 CEST 2021
+
+Copying 37_pbe_.out to /cluster/home/ambr/projects/psp/row12/calcs/singlets
+Copying 37_pbe_.json to /cluster/home/ambr/projects/psp/row12/calcs/singlets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3267506         37_pbe_        120                                             00:33:49      1:0 
+3267506.bat+      batch         42        1   00:00:00          0   00:00:00   00:33:49      1:0 
+3267506.ext+     extern        120        3   00:00:00          1   00:00:00   00:33:49      0:0 
+3267506.0      mrchem.x        120       20   00:33:44         19   01:56:57   00:33:47      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3267506                                                                          
+3267506.bat+     14236K          0     14236K        0              0          0 
+3267506.ext+          0          1          0        0              1          0 
+3267506.0      8405372K          0 6416389734        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3267506                                                                                               
+3267506.bat+        3.73M               0          3.73M        0.02M                0          0.02M 
+3267506.ext+        0.00M               1          0.00M            0                1              0 
+3267506.0           2.67M               1          2.66M        2.11M                0          2.07M 
+
+Job 3267506 completed at Wed Aug 11 13:33:18 CEST 2021

@@ -1,0 +1,30 @@
+Starting job 3255872 on c5-[9,55],c11-[32,44,60] at Wed Aug 11 01:33:07 CEST 2021
+
+Copying al_1_pbe_.out to /cluster/home/ambr/projects/psp/row3/calcs/triplets
+Copying al_1_pbe_.json to /cluster/home/ambr/projects/psp/row3/calcs/triplets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3255872       al_1_pbe_        120                                             00:27:12      1:0 
+3255872.bat+      batch         36        1   00:00:01          0   00:00:01   00:27:12      1:0 
+3255872.ext+     extern        120        5   00:00:00          4   00:00:00   00:27:12      0:0 
+3255872.0      mrchem.x        120       20   00:26:57         19   01:30:51   00:26:59      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3255872                                                                          
+3255872.bat+     14332K          0     14332K        0              0          0 
+3255872.ext+          0          4          0        0              4          0 
+3255872.0      5853268K          2 4214532710        0             11          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3255872                                                                                               
+3255872.bat+        3.70M               0          3.70M        0.02M                0          0.02M 
+3255872.ext+        0.00M               4          0.00M            0                4              0 
+3255872.0           2.67M              16          2.33M      135.39M                0         66.85M 
+
+Job 3255872 completed at Wed Aug 11 02:00:20 CEST 2021

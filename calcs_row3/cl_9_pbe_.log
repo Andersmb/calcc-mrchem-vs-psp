@@ -1,0 +1,30 @@
+Starting job 3254938 on c1-23,c2-25,c5-29,c11-[44,55] at Tue Aug 10 13:01:07 CEST 2021
+
+Copying cl_9_pbe_.out to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+Copying cl_9_pbe_.json to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3254938       cl_9_pbe_        120                                             00:13:31      1:0 
+3254938.bat+      batch         30        1   00:00:01          0   00:00:01   00:13:31      1:0 
+3254938.ext+     extern        120        5   00:00:00          4   00:00:00   00:13:31      0:0 
+3254938.0      mrchem.x        120       20   00:13:26         19   00:46:08   00:13:28      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3254938                                                                          
+3254938.bat+     14332K          0     14332K        0              0          0 
+3254938.ext+          0          4          0        0              4          0 
+3254938.0      3821756K          0 2962362572        0             14          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3254938                                                                                               
+3254938.bat+        5.60M               0          5.60M        0.05M                0          0.05M 
+3254938.ext+        0.00M               4          0.00M            0                4              0 
+3254938.0           2.67M              18          2.24M       94.22M                0         40.29M 
+
+Job 3254938 completed at Tue Aug 10 13:14:39 CEST 2021

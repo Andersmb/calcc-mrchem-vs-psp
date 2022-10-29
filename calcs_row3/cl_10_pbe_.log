@@ -1,0 +1,30 @@
+Starting job 3254928 on c10-[54-55],c11-19 at Tue Aug 10 12:15:58 CEST 2021
+
+Copying cl_10_pbe_.out to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+Copying cl_10_pbe_.json to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3254928      cl_10_pbe_        120                                             00:39:43      1:0 
+3254928.bat+      batch         42        1   00:00:01          0   00:00:01   00:39:43      1:0 
+3254928.ext+     extern        120        3   00:00:00          1   00:00:00   00:39:43      0:0 
+3254928.0      mrchem.x        120       20   00:39:36         19   02:11:48   00:39:38      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3254928                                                                          
+3254928.bat+     14236K          0     14236K        0              0          0 
+3254928.ext+          0          1          0        0              1          0 
+3254928.0      6363400K          8 4950650470        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3254928                                                                                               
+3254928.bat+        3.73M               0          3.73M        0.02M                0          0.02M 
+3254928.ext+        0.00M               1          0.00M            0                1              0 
+3254928.0           2.67M               1          2.66M      147.11M                7         89.88M 
+
+Job 3254928 completed at Tue Aug 10 12:55:41 CEST 2021

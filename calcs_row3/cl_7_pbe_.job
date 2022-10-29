@@ -1,0 +1,40 @@
+#! /bin/bash
+
+#-------------------------------------------
+# File generated 2021-08-10 12:42:12.983339
+#-------------------------------------------
+
+#SBATCH --account=nn4654k
+#SBATCH --job-name=cl_7_pbe_
+#SBATCH --output=cl_7_pbe_.log
+#SBATCH --error=cl_7_pbe_.err
+#SBATCH --ntasks=20
+#SBATCH --cpus-per-task=6
+#SBATCH --time=24:00:00
+#SBATCH --mem=160GB
+#SBATCH --mail-type=NONE
+#SBATCH --partition=normal
+
+module load Python/3.8.2-GCCcore-9.3.0
+export OMP_NUM_THREADS=6
+
+set -o errexit
+set -o nounset
+
+cp cl_7_pbe_.inp $SCRATCH
+
+cd $SCRATCH
+/cluster/home/ambr/mrchem_master/install-1.0.1/bin/mrchem --launcher 'srun' cl_7_pbe_
+
+savefile cl_7_pbe_.out
+savefile cl_7_pbe_.json
+
+mkdir -p /cluster/projects/nn4654k/ambr/MWorbitals_${SLURM_JOBID}
+cp orbitals/* /cluster/projects/nn4654k/ambr/MWorbitals_${SLURM_JOBID}/
+echo /cluster/projects/nn4654k/ambr/MWorbitals_${SLURM_JOBID} > ${SLURM_SUBMIT_DIR}/cl_7_pbe_.orbitals
+
+mkdir -p /cluster/projects/nn4654k/ambr/MWcheckpoints_${SLURM_JOBID}
+cp checkpoint/* /cluster/projects/nn4654k/ambr/MWcheckpoints_${SLURM_JOBID}/
+echo /cluster/projects/nn4654k/ambr/MWcheckpoints_${SLURM_JOBID} > ${SLURM_SUBMIT_DIR}/cl_7_pbe_.checkpoint
+
+exit 0

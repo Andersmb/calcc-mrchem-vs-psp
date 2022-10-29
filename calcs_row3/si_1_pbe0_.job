@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#SBATCH --account=nn4654k
+#SBATCH --mail-type=None
+#SBATCH --job-name=si_1_pbe0_
+#SBATCH --output=si_1_pbe0_.log
+#SBATCH --error=si_1_pbe0_.err
+#SBATCH --time=00-48:00:00
+#SBATCH --mem=160GB
+#SBATCH --ntasks=30
+#SBATCH --cpus-per-task=6
+
+module purge
+module load foss/2021b
+module load OpenMPI/4.0.3-GCC-9.3.0
+module load Python/3.8.2-GCCcore-9.3.0
+
+cp si_1_pbe0_.inp $SCRATCH
+cd $SCRATCH
+export OMP_NUM_THREADS=6
+$HOME/software/mrchem/install_upstream_master/bin/mrchem --launcher 'srun -n 30'  si_1_pbe0_
+
+savefile si_1_pbe0_.out
+savefile si_1_pbe0_.json
+
+DIR=/cluster/projects/nn4654k/$(whoami)/MWOrbitals/${SLURM_JOBID}
+mkdir -p $DIR
+cp orbitals/* $DIR/
+echo $DIR > ${SLURM_SUBMIT_DIR}/si_1_pbe0_.orbitals
+
+DIR=/cluster/projects/nn4654k/$(whoami)/MWCheckpoints/${SLURM_JOBID}
+mkdir -p $DIR
+cp checkpoint/* $DIR/
+echo $DIR > ${SLURM_SUBMIT_DIR}/si_1_pbe0_.checkpoint
+
+exit 0

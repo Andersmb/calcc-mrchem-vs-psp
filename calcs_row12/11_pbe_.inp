@@ -1,0 +1,37 @@
+
+world_prec = 1e-06
+world_unit = bohr
+world_size = 6
+
+MPI {
+  bank_size = 1
+  share_nuclear_potential = true
+  share_coulomb_potential = true
+}
+
+Molecule {
+  charge = 0
+  multiplicity = 2
+  translate = true
+  $coords
+  O 0.00000000 0.43010163 2.16846057
+  O 0.00000000 1.09396238 0.00000000
+  F 0.00000000 -1.35474456 -1.92752051
+  $end
+}
+
+WaveFunction {
+  method = 'pbe'
+  restricted = false
+}
+
+SCF {
+  guess_type = sad_dz
+  guess_prec = 0.0001
+  orbital_thrs = 4.9999999999999996e-05
+  energy_thrs = 1e-06
+  max_iter = 200
+  kain = 10
+  localize = true
+  write_orbitals = false
+}

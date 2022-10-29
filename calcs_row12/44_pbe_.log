@@ -1,0 +1,30 @@
+Starting job 3267513 on c1-38,c2-5,c11-6 at Wed Aug 11 17:58:35 CEST 2021
+
+Copying 44_pbe_.out to /cluster/home/ambr/projects/psp/row12/calcs/singlets
+Copying 44_pbe_.json to /cluster/home/ambr/projects/psp/row12/calcs/singlets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3267513         44_pbe_        120                                             00:20:47      1:0 
+3267513.bat+      batch         36        1   00:00:00          0   00:00:00   00:20:47      1:0 
+3267513.ext+     extern        120        3   00:00:00          2   00:00:00   00:20:47      0:0 
+3267513.0      mrchem.x        120       20   00:20:42         19   01:14:24   00:20:44      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3267513                                                                          
+3267513.bat+     14232K          0     14232K        0              0          0 
+3267513.ext+          0          2          0        0              2          0 
+3267513.0      4267584K          3 3778430361        0              0          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3267513                                                                                               
+3267513.bat+        3.70M               0          3.70M        0.02M                0          0.02M 
+3267513.ext+        0.00M               2          0.00M            0                2              0 
+3267513.0           2.67M              17          2.30M        2.08M                0          2.07M 
+
+Job 3267513 completed at Wed Aug 11 18:19:21 CEST 2021

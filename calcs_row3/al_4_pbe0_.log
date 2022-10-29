@@ -1,0 +1,30 @@
+Starting job 5688103 on c1-[6,18,24,28],c5-11 at Thu May 19 19:24:39 CEST 2022
+
+Copying al_4_pbe0_.out to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+Copying al_4_pbe0_.json to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+
+Task and CPU usage stats:
+JobID           JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+5688103      al_4_pbe0_        180                                             00:12:09      0:0 
+5688103.bat+      batch         36        1   00:00:02          0   00:00:02   00:12:09      0:0 
+5688103.ext+     extern        180        5   00:00:00          1   00:00:00   00:12:09      0:0 
+5688103.0      mrchem.x        180       30   00:11:55         29   00:26:13   00:11:58      0:0 
+
+Memory usage stats:
+JobID            MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+5688103                                                                          
+5688103.bat+     19272K          0     19272K        0              0          0 
+5688103.ext+          0          1          0        0              1          0 
+5688103.0      5325844K         29 3212222600        0              9          0 
+
+Disk usage stats:
+JobID         MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+5688103                                                                                               
+5688103.bat+       16.88M               0         16.88M        0.03M                0          0.03M 
+5688103.ext+        0.00M               1          0.00M            0                1              0 
+5688103.0           6.77M              13          6.74M       67.01M               13         33.70M 
+
+Job 5688103 completed at Thu May 19 19:36:47 CEST 2022

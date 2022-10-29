@@ -1,0 +1,30 @@
+Starting job 3254936 on c10-[54-55],c11-19 at Tue Aug 10 12:56:04 CEST 2021
+
+Copying cl_5_pbe_.out to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+Copying cl_5_pbe_.json to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3254936       cl_5_pbe_        120                                             01:47:10      1:0 
+3254936.bat+      batch         42        1   00:00:03          0   00:00:03   01:47:10      1:0 
+3254936.ext+     extern        120        3   00:00:00          1   00:00:00   01:47:10      0:0 
+3254936.0      mrchem.x        120       20   01:46:55         19   05:47:27   01:46:57      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3254936                                                                          
+3254936.bat+     14276K          0     14276K        0              0          0 
+3254936.ext+          0          1          0        0              1          0 
+3254936.0     13666992K          4 117922807+        0             12          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3254936                                                                                               
+3254936.bat+        5.60M               0          5.60M        0.06M                0          0.06M 
+3254936.ext+        0.00M               1          0.00M            0                1              0 
+3254936.0           2.67M               0          2.67M      397.98M                3        268.26M 
+
+Job 3254936 completed at Tue Aug 10 14:43:15 CEST 2021

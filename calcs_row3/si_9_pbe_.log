@@ -1,0 +1,30 @@
+Starting job 3254972 on c5-52,c10-29,c11-47 at Tue Aug 10 15:11:59 CEST 2021
+
+Copying si_9_pbe_.out to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+Copying si_9_pbe_.json to /cluster/home/ambr/projects/psp/row3/calcs/singlets
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+3254972       si_9_pbe_        120                                             00:36:24      1:0 
+3254972.bat+      batch         36        1   00:00:02          0   00:00:02   00:36:24      1:0 
+3254972.ext+     extern        120        3   00:00:00          1   00:00:00   00:36:24      0:0 
+3254972.0      mrchem.x        120       20   00:36:14         19   01:57:52   00:36:16      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+3254972                                                                          
+3254972.bat+     14248K          0     14248K        0              0          0 
+3254972.ext+          0          1          0        0              1          0 
+3254972.0      8845412K          8 7446933299        0             19          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+3254972                                                                                               
+3254972.bat+        3.70M               0          3.70M        0.02M                0          0.02M 
+3254972.ext+        0.00M               1          0.00M            0                1              0 
+3254972.0           2.67M              18          2.48M      233.34M                8        161.12M 
+
+Job 3254972 completed at Tue Aug 10 15:48:23 CEST 2021

@@ -1,0 +1,32 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 3213319 ON c10-22 CANCELLED AT 2021-08-03T13:36:33 ***
+slurmstepd: error: *** STEP 3213319.0 ON c10-22 CANCELLED AT 2021-08-03T13:36:33 ***
+srun: error: c10-24: tasks 7-13: Terminated
+srun: error: c10-25: tasks 14-19: Terminated
+cp: cannot stat ‘checkpoint/*’: No such file or directory
+cp: cannot stat ‘checkpoint/*’: No such file or directory
+Lmod has detected the following error: Your site prevents the automatic
+swapping of modules with same name. You must explicitly unload the loaded
+version of "GCCcore/8.2.0" before you can load the new one. Use swap to do
+this:
+
+   $ module swap GCCcore/8.2.0 GCCcore/9.3.0
+
+Alternatively, you can set the environment variable
+LMOD_DISABLE_SAME_NAME_AUTOSWAP to "no" to re-enable same name autoswapping.
+
+While processing the following module(s):
+    Module fullname             Module Filename
+    ---------------             ---------------
+    Python/3.8.2-GCCcore-9.3.0  /cluster/modulefiles/all/Python/3.8.2-GCCcore-9.3.0.lua
+
+/usr/bin/env: python3: No such file or directory
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 3217179 ON c1-14 CANCELLED AT 2021-08-04T11:54:03 ***
+slurmstepd: error: *** STEP 3217179.0 ON c1-14 CANCELLED AT 2021-08-04T11:54:03 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 3217203 ON c1-14 CANCELLED AT 2021-08-04T12:52:16 ***
+slurmstepd: error: *** STEP 3217203.0 ON c1-14 CANCELLED AT 2021-08-04T12:52:16 ***
+cp: cannot stat ‘checkpoint/*’: No such file or directory
+cp: cannot stat ‘checkpoint/*’: No such file or directory
+cp: cannot stat ‘checkpoint/*’: No such file or directory
